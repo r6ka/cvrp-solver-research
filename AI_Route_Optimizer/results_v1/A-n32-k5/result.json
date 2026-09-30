@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "solver": "AI-Based Green Route Optimizer (Hybrid Genetic Algorithm + Local Search)",
+    "solver_version": "1.0.0",
+    "run_timestamp_utc": "2026-09-29T08:47:46+00:00",
+    "command": "python solver.py benchmarks/A-n32-k5.vrp --time 30 --seed 1 --out /home/user/workspace/AI_Route_Optimizer/results",
+    "python": "3.14.3",
+    "platform": "Linux-6.1.155-x86_64-with-glibc2.43",
+    "input_file": "benchmarks/A-n32-k5.vrp",
+    "input_sha256": "2ebedd0631c4c56c08ba3b1476ac874a7d54cc448bd3795de534f43b2c099ce2",
+    "objective": "distance",
+    "seed": 1,
+    "time_limit_s": 30.0,
+    "runtime_s": 30.007,
+    "ga_children": 1075,
+    "reference_value_from_file_comment": 784.0,
+    "convergence_history": [
+      [
+        0,
+        0.021,
+        784.0
+      ]
+    ]
+  },
+  "result": {
+    "instance": "A-n32-k5",
+    "n_customers": 31,
+    "capacity": 100.0,
+    "max_vehicles": 5,
+    "vehicles_used": 5,
+    "total_distance": 784.0,
+    "total_fuel_l": 241.86919999999998,
+    "total_co2_kg": 648.2094559999999,
+    "capacity_violations": 0,
+    "missing_customers": [],
+    "duplicated_customers": [],
+    "invalid_customers": [],
+    "feasible": true,
+    "routes": [
+      {
+        "vehicle": 1,
+        "route": [
+          0,
+          14,
+          28,
+          11,
+          4,
+          23,
+          3,
+          2,
+          6,
+          0
+        ],
+        "load": 98.0,
+        "capacity": 100.0,
+        "utilisation_pct": 98.0,
+        "distance": 230.0,
+        "fuel_l": 73.5121,
+        "co2_kg": 197.01242800000003,
+        "capacity_ok": true
+      },
+      {
+        "vehicle": 2,
+        "route": [
+          0,
+          24,
+          27,
+          0
+        ],
+        "load": 44.0,
+        "capacity": 100.0,
+        "utilisation_pct": 44.0,
+        "distance": 59.0,
+        "fuel_l": 16.388,
+        "co2_kg": 43.91984000000001,
+        "capacity_ok": true
+      },
+      {
+        "vehicle": 3,
+        "route": [
+          0,
+          12,
+          1,
+          16,
+          30,
+          0
+        ],
+        "load": 72.0,
+        "capacity": 100.0,
+        "utilisation_pct": 72.0,
+        "distance": 73.0,
+        "fuel_l": 22.1162,
+        "co2_kg": 59.271416,
+        "capacity_ok": true
+      },
+      {
+        "vehicle": 4,
+        "route": [
+          0,
+          21,
+          31,
+          19,
+          17,
+          13,
+          7,
+          26,
+          0
+        ],
+        "load": 98.0,
+        "capacity": 100.0,
+        "utilisation_pct": 98.0,
+        "distance": 155.0,
+        "fuel_l": 49.97809999999999,
+        "co2_kg": 133.941308,
+        "capacity_ok": true
+      },
+      {
+        "vehicle": 5,
+        "route": [
+          0,
+          20,
+          5,
+          25,
+          10,
+          15,
+          22,
+          9,
+          8,
+          18,
+          29,
+          0
+        ],
+        "load": 98.0,
+        "capacity": 100.0,
+        "utilisation_pct": 98.0,
+        "distance": 267.0,
+        "fuel_l": 79.8748,
+        "co2_kg": 214.064464,
+        "capacity_ok": true
+      }
+    ]
+  }
+}

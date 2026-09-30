@@ -1,0 +1,32 @@
+================================================================
+ AI-Based Green Route Optimizer (Hybrid Genetic Algorithm + Local Search)
+================================================================
+ Instance          : A-n32-k5
+ Input file        : benchmarks/A-n32-k5.vrp
+ Customers         : 31
+ Vehicle capacity  : 100
+ Max vehicles      : 5
+ Total demand      : 410
+ Objective         : distance
+ Random seed       : 1
+----------------------------------------------------------------
+ Vehicle 1: 0 -> 14 -> 28 -> 11 -> 4 -> 23 -> 3 -> 2 -> 6 -> 0
+     load 98/100 (98%)   distance 230
+ Vehicle 2: 0 -> 24 -> 27 -> 0
+     load 44/100 (44%)   distance 59
+ Vehicle 3: 0 -> 12 -> 1 -> 16 -> 30 -> 0
+     load 72/100 (72%)   distance 73
+ Vehicle 4: 0 -> 21 -> 31 -> 19 -> 17 -> 13 -> 7 -> 26 -> 0
+     load 98/100 (98%)   distance 155
+ Vehicle 5: 0 -> 20 -> 5 -> 25 -> 10 -> 15 -> 22 -> 9 -> 8 -> 18 -> 29 -> 0
+     load 98/100 (98%)   distance 267
+----------------------------------------------------------------
+ Total Distance      : 784
+ Vehicles used       : 5 / 5
+ Capacity violations : 0
+ Missing customers   : 0
+ Duplicate visits    : 0
+ Feasible            : YES
+ Runtime             : 30.0 s  (1075 GA children)
+ Published optimum   : 784   (gap +0.00%)  [read from file comment AFTER solving]
+================================================================

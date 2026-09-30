@@ -1,0 +1,274 @@
+
+########## 1. OFFICIAL BENCHMARKS ##########
+
+>>> Solving benchmarks/A-n32-k5.vrp  (objective=distance, seed=1, time limit=30s)
+  iter      0  t=   0.0s  best=784.00  routes=5
+================================================================
+ AI-Based Green Route Optimizer (Hybrid Genetic Algorithm + Local Search)
+================================================================
+ Instance          : A-n32-k5
+ Input file        : benchmarks/A-n32-k5.vrp
+ Customers         : 31
+ Vehicle capacity  : 100
+ Max vehicles      : 5
+ Total demand      : 410
+ Objective         : distance
+ Random seed       : 1
+----------------------------------------------------------------
+ Vehicle 1: 0 -> 14 -> 28 -> 11 -> 4 -> 23 -> 3 -> 2 -> 6 -> 0
+     load 98/100 (98%)   distance 230
+ Vehicle 2: 0 -> 24 -> 27 -> 0
+     load 44/100 (44%)   distance 59
+ Vehicle 3: 0 -> 12 -> 1 -> 16 -> 30 -> 0
+     load 72/100 (72%)   distance 73
+ Vehicle 4: 0 -> 21 -> 31 -> 19 -> 17 -> 13 -> 7 -> 26 -> 0
+     load 98/100 (98%)   distance 155
+ Vehicle 5: 0 -> 20 -> 5 -> 25 -> 10 -> 15 -> 22 -> 9 -> 8 -> 18 -> 29 -> 0
+     load 98/100 (98%)   distance 267
+----------------------------------------------------------------
+ Total Distance      : 784
+ Vehicles used       : 5 / 5
+ Capacity violations : 0
+ Missing customers   : 0
+ Duplicate visits    : 0
+ Feasible            : YES
+ Runtime             : 30.0 s  (1075 GA children)
+ Published optimum   : 784   (gap +0.00%)  [read from file comment AFTER solving]
+================================================================
+
+>>> Solving benchmarks/B-n31-k5.vrp  (objective=distance, seed=1, time limit=30s)
+  iter      0  t=   0.0s  best=693.00  routes=5
+  iter      0  t=   0.0s  best=684.00  routes=5
+  iter      0  t=   0.1s  best=680.00  routes=5
+  iter      0  t=   0.3s  best=679.00  routes=5
+  iter      0  t=   0.3s  best=676.00  routes=5
+  iter     14  t=   1.3s  best=675.00  routes=5
+  iter     50  t=   2.0s  best=672.00  routes=5
+================================================================
+ AI-Based Green Route Optimizer (Hybrid Genetic Algorithm + Local Search)
+================================================================
+ Instance          : B-n31-k5
+ Input file        : benchmarks/B-n31-k5.vrp
+ Customers         : 30
+ Vehicle capacity  : 100
+ Max vehicles      : 5
+ Total demand      : 412
+ Objective         : distance
+ Random seed       : 1
+----------------------------------------------------------------
+ Vehicle 1: 0 -> 22 -> 6 -> 9 -> 17 -> 13 -> 30 -> 0
+     load 93/100 (93%)   distance 110
+ Vehicle 2: 0 -> 20 -> 27 -> 10 -> 2 -> 0
+     load 38/100 (38%)   distance 189
+ Vehicle 3: 0 -> 21 -> 16 -> 18 -> 25 -> 5 -> 4 -> 29 -> 0
+     load 86/100 (86%)   distance 112
+ Vehicle 4: 0 -> 26 -> 28 -> 12 -> 23 -> 7 -> 8 -> 0
+     load 100/100 (100%)   distance 107
+ Vehicle 5: 0 -> 14 -> 15 -> 11 -> 24 -> 19 -> 1 -> 3 -> 0
+     load 95/100 (95%)   distance 154
+----------------------------------------------------------------
+ Total Distance      : 672
+ Vehicles used       : 5 / 5
+ Capacity violations : 0
+ Missing customers   : 0
+ Duplicate visits    : 0
+ Feasible            : YES
+ Runtime             : 30.0 s  (1206 GA children)
+ Published optimum   : 672   (gap +0.00%)  [read from file comment AFTER solving]
+================================================================
+
+>>> Solving benchmarks/P-n40-k5.vrp  (objective=distance, seed=1, time limit=30s)
+  iter      0  t=   0.0s  best=475.00  routes=5
+  iter      0  t=   0.0s  best=472.00  routes=5
+  iter      0  t=   0.1s  best=468.00  routes=5
+  iter      0  t=   0.2s  best=458.00  routes=5
+================================================================
+ AI-Based Green Route Optimizer (Hybrid Genetic Algorithm + Local Search)
+================================================================
+ Instance          : P-n40-k5
+ Input file        : benchmarks/P-n40-k5.vrp
+ Customers         : 39
+ Vehicle capacity  : 140
+ Max vehicles      : 5
+ Total demand      : 618
+ Objective         : distance
+ Random seed       : 1
+----------------------------------------------------------------
+ Vehicle 1: 0 -> 5 -> 10 -> 39 -> 33 -> 15 -> 37 -> 17 -> 12 -> 0
+     load 114/140 (81%)   distance 94
+ Vehicle 2: 0 -> 32 -> 2 -> 20 -> 35 -> 36 -> 3 -> 28 -> 22 -> 1 -> 0
+     load 138/140 (99%)   distance 98
+ Vehicle 3: 0 -> 6 -> 24 -> 23 -> 7 -> 26 -> 31 -> 8 -> 27 -> 0
+     load 116/140 (83%)   distance 92
+ Vehicle 4: 0 -> 11 -> 16 -> 29 -> 21 -> 34 -> 30 -> 9 -> 38 -> 0
+     load 119/140 (85%)   distance 85
+ Vehicle 5: 0 -> 18 -> 4 -> 19 -> 13 -> 25 -> 14 -> 0
+     load 131/140 (94%)   distance 89
+----------------------------------------------------------------
+ Total Distance      : 458
+ Vehicles used       : 5 / 5
+ Capacity violations : 0
+ Missing customers   : 0
+ Duplicate visits    : 0
+ Feasible            : YES
+ Runtime             : 30.0 s  (915 GA children)
+ Published optimum   : 458   (gap +0.00%)  [read from file comment AFTER solving]
+================================================================
+
+########## 2. INDEPENDENT VALIDATION (validate.py, no solver code) ##########
+Instance A-n32-k5: 31 customers, capacity 100, vehicles 5
+  Route 1: load 98/100 OK             distance 230
+  Route 2: load 44/100 OK             distance 59
+  Route 3: load 72/100 OK             distance 73
+  Route 4: load 98/100 OK             distance 155
+  Route 5: load 98/100 OK             distance 267
+  Recomputed total distance: 784
+  Cost written in .sol file: 784
+  VALID SOLUTION: YES
+Instance B-n31-k5: 30 customers, capacity 100, vehicles 5
+  Route 1: load 93/100 OK             distance 110
+  Route 2: load 38/100 OK             distance 189
+  Route 3: load 86/100 OK             distance 112
+  Route 4: load 100/100 OK             distance 107
+  Route 5: load 95/100 OK             distance 154
+  Recomputed total distance: 672
+  Cost written in .sol file: 672
+  VALID SOLUTION: YES
+Instance P-n40-k5.vrp: 39 customers, capacity 140, vehicles 5
+  Route 1: load 114/140 OK             distance 94
+  Route 2: load 138/140 OK             distance 98
+  Route 3: load 116/140 OK             distance 92
+  Route 4: load 119/140 OK             distance 85
+  Route 5: load 131/140 OK             distance 89
+  Recomputed total distance: 458
+  Cost written in .sol file: 458
+  VALID SOLUTION: YES
+
+########## 3. COMPARISON WITH NON-AI METHODS ##########
+instance   method                  distance  veh   gap %
+A-n32-k5   Sweep + fill trucks         1384    5   76.53
+A-n32-k5   Nearest neighbour           1145    5   46.05
+A-n32-k5   Local search only            847    5    8.04
+A-n32-k5   Hybrid GA (ours)             784    5    0.00
+B-n31-k5   Sweep + fill trucks          940    5   39.88
+B-n31-k5   Nearest neighbour            887    5   31.99
+B-n31-k5   Local search only            714    5    6.25
+B-n31-k5   Hybrid GA (ours)             672    5    0.00
+P-n40-k5   Sweep + fill trucks          676    5   47.60
+P-n40-k5   Nearest neighbour            682    5   48.91
+P-n40-k5   Local search only            485    5    5.90
+P-n40-k5   Hybrid GA (ours)             458    5    0.00
+
+########## 4. ROBUSTNESS: 10 SEEDS x 15s ##########
+A-n32-k5: best 784  mean 784.0  worst 784  optimum reached 10/10  mean time-to-best 0.1s
+B-n31-k5: best 672  mean 672.0  worst 672  optimum reached 10/10  mean time-to-best 2.1s
+P-n40-k5: best 458  mean 458.0  worst 458  optimum reached 10/10  mean time-to-best 0.2s
+
+########## 5. GENERALISATION: 8 EXTRA CVRPLIB INSTANCES ##########
+A-n33-k5   n= 32 K=5  ours    661  optimum    661  gap  0.00%  feasible True
+A-n45-k6   n= 44 K=6  ours    966  optimum    944  gap  2.33%  feasible True
+A-n60-k9   n= 59 K=9  ours   1354  optimum   1354  gap  0.00%  feasible True
+B-n45-k5   n= 44 K=5  ours    751  optimum    751  gap  0.00%  feasible True
+B-n57-k9   n= 56 K=9  ours   1601  optimum   1598  gap  0.19%  feasible True
+P-n50-k7   n= 49 K=7  ours    554  optimum    554  gap  0.00%  feasible True
+P-n76-k5   n= 75 K=5  ours    627  optimum    627  gap  0.00%  feasible True
+E-n51-k5   n= 50 K=5  ours    521  optimum    521  gap  0.00%  feasible True
+
+########## 6. SELF-CREATED CASE: SCG-CPAC NARATHIWAT ##########
+
+>>> Solving own_case/scg_cpac_narathiwat.json  (objective=distance, seed=1, time limit=30s)
+  iter      0  t=   0.0s  best=656.58  routes=5
+  iter      0  t=   0.1s  best=644.94  routes=6
+  iter      0  t=   0.1s  best=641.44  routes=5
+================================================================
+ AI-Based Green Route Optimizer (Hybrid Genetic Algorithm + Local Search)
+================================================================
+ Instance          : SCG-CPAC-Narathiwat-25
+ Input file        : own_case/scg_cpac_narathiwat.json
+ Customers         : 25
+ Vehicle capacity  : 12
+ Max vehicles      : 6
+ Total demand      : 58.70
+ Objective         : distance
+ Random seed       : 1
+----------------------------------------------------------------
+ Vehicle 1: 0 -> 22 -> 18 -> 25 -> 24 -> 12 -> 0
+     Su-ngai Padi - Housing project 1 > Sukhirin - Hardware store 1 > Chanae - Precast yard 2 > Chanae - Housing project 1 > Ra-ngae - Housing project 2
+     load 12/12 (100%)   distance 159.11   CO2 118.8 kg
+ Vehicle 2: 0 -> 16 -> 17 -> 19 -> 20 -> 21 -> 0
+     Waeng - Hardware store 1 > Waeng - Housing project 2 > Su-ngai Kolok - Precast yard 1 > Su-ngai Kolok - Housing project 2 > Su-ngai Kolok - Precast yard 3
+     load 11.70/12 (98%)   distance 151.85   CO2 112.5 kg
+ Vehicle 3: 0 -> 4 -> 5 -> 6 -> 23 -> 3 -> 0
+     Tak Bai - Hardware store 1 > Tak Bai - Hardware store 2 > Tak Bai - Housing project 3 > Su-ngai Padi - Construction site 2 > Mueang Narathiwat - Housing project 3
+     load 11.40/12 (95%)   distance 123.85   CO2 92.3 kg
+ Vehicle 4: 0 -> 7 -> 8 -> 9 -> 2 -> 1 -> 0
+     Bacho - Precast yard 1 > Bacho - Hardware store 2 > Yi-ngo - Precast yard 1 > Mueang Narathiwat - Housing project 2 > Mueang Narathiwat - Hardware store 1
+     load 11.60/12 (97%)   distance 72.61   CO2 57.1 kg
+ Vehicle 5: 0 -> 10 -> 14 -> 13 -> 15 -> 11 -> 0
+     Yi-ngo - Precast yard 2 > Rueso - Housing project 2 > Rueso - Housing project 1 > Si Sakhon - Hardware store 1 > Ra-ngae - Housing project 1
+     load 12/12 (100%)   distance 134.02   CO2 98.5 kg
+----------------------------------------------------------------
+ Total Distance      : 641.44
+ Vehicles used       : 5 / 6
+ Capacity violations : 0
+ Missing customers   : 0
+ Duplicate visits    : 0
+ Feasible            : YES
+ Estimated fuel      : 178.8 L
+ Estimated CO2       : 479.3 kg
+ Runtime             : 30.0 s  (1234 GA children)
+================================================================
+
+>>> Solving own_case/scg_cpac_narathiwat.json  (objective=co2, seed=1, time limit=30s)
+  iter      0  t=   0.0s  best=464.91  routes=6
+  iter      0  t=   0.1s  best=456.76  routes=6
+  iter      0  t=   0.2s  best=456.70  routes=6
+  iter     19  t=   2.7s  best=456.68  routes=6
+================================================================
+ AI-Based Green Route Optimizer (Hybrid Genetic Algorithm + Local Search)
+================================================================
+ Instance          : SCG-CPAC-Narathiwat-25
+ Input file        : own_case/scg_cpac_narathiwat.json
+ Customers         : 25
+ Vehicle capacity  : 12
+ Max vehicles      : 6
+ Total demand      : 58.70
+ Objective         : co2
+ Random seed       : 1
+----------------------------------------------------------------
+ Vehicle 1: 0 -> 3 -> 2 -> 1 -> 0
+     Mueang Narathiwat - Housing project 3 > Mueang Narathiwat - Housing project 2 > Mueang Narathiwat - Hardware store 1
+     load 7.90/12 (66%)   distance 10.56   CO2 7.2 kg
+ Vehicle 2: 0 -> 23 -> 22 -> 19 -> 20 -> 21 -> 0
+     Su-ngai Padi - Construction site 2 > Su-ngai Padi - Housing project 1 > Su-ngai Kolok - Precast yard 1 > Su-ngai Kolok - Housing project 2 > Su-ngai Kolok - Precast yard 3
+     load 11/12 (92%)   distance 134.59   CO2 95.8 kg
+ Vehicle 3: 0 -> 12 -> 11 -> 10 -> 9 -> 8 -> 7 -> 0
+     Ra-ngae - Housing project 2 > Ra-ngae - Housing project 1 > Yi-ngo - Precast yard 2 > Yi-ngo - Precast yard 1 > Bacho - Hardware store 2 > Bacho - Precast yard 1
+     load 11.10/12 (92%)   distance 94.51   CO2 68.4 kg
+ Vehicle 4: 0 -> 25 -> 18 -> 16 -> 17 -> 0
+     Chanae - Precast yard 2 > Sukhirin - Hardware store 1 > Waeng - Hardware store 1 > Waeng - Housing project 2
+     load 11.10/12 (92%)   distance 164.69   CO2 118.9 kg
+ Vehicle 5: 0 -> 14 -> 13 -> 15 -> 24 -> 0
+     Rueso - Housing project 2 > Rueso - Housing project 1 > Si Sakhon - Hardware store 1 > Chanae - Housing project 1
+     load 11.20/12 (93%)   distance 159.53   CO2 112.7 kg
+ Vehicle 6: 0 -> 6 -> 5 -> 4 -> 0
+     Tak Bai - Housing project 3 > Tak Bai - Hardware store 2 > Tak Bai - Hardware store 1
+     load 6.40/12 (53%)   distance 80.34   CO2 53.6 kg
+----------------------------------------------------------------
+ Total Distance      : 644.23
+ Vehicles used       : 6 / 6
+ Capacity violations : 0
+ Missing customers   : 0
+ Duplicate visits    : 0
+ Feasible            : YES
+ Estimated fuel      : 170.4 L
+ Estimated CO2       : 456.7 kg
+ Runtime             : 30.0 s  (844 GA children)
+================================================================
+method                                          km  fuel L  CO2 kg trucks
+Sweep + fill trucks (manual-style plan)      877.0   238.1   638.1      6
+Nearest neighbour                            828.7   211.5   566.9      6
+Hybrid GA - min distance                     641.4   178.8   479.3      5
+Hybrid GA - min CO2                          644.2   170.4   456.7      6
+
+All done in 845 s. Results in /home/user/workspace/AI_Route_Optimizer/results

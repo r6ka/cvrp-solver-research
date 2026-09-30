@@ -1,0 +1,31 @@
+instance,method,distance,vehicles,feasible,gap_pct,seconds
+A-n32-k5,CWS parallel (VeRyPy ps / CWVRP / adamiaonr),842.0,5,True,7.3979591836734695,0.0
+A-n32-k5,CWS sequential (VeRyPy ss / CWVRP),904.0,5,True,15.306122448979592,0.0
+A-n32-k5,Sweep (ivanchoff / VeRyPy swp),1561.0,5,True,99.10714285714286,0.0
+A-n32-k5,Greedy NN (vss2sn Alg. 1),1145.0,5,True,46.045918367346935,0.0
+A-n32-k5,Route-first cluster-second (msommacal),887.0,5,True,13.137755102040817,0.0
+A-n32-k5,CWS + 2-opt (MekhyW),829.0,5,True,5.739795918367347,0.0
+A-n32-k5,CWS + Simulated annealing (vss2sn / adamiaonr),827.0,5,True,5.48469387755102,10.0
+A-n32-k5,Tabu search (vss2sn / ivanchoff / AHalic),785.0,5,True,0.12755102040816327,10.0
+A-n32-k5,"Simple GA, no LS (manu-p-1)",870.0,5,True,10.96938775510204,10.0
+A-n32-k5,v2.0 (ours),784.0,5,True,0.0,25.5
+B-n31-k5,CWS parallel (VeRyPy ps / CWVRP / adamiaonr),677.0,5,True,0.7440476190476191,0.0
+B-n31-k5,CWS sequential (VeRyPy ss / CWVRP),707.0,5,True,5.208333333333333,0.0
+B-n31-k5,Sweep (ivanchoff / VeRyPy swp),940.0,5,True,39.88095238095238,0.0
+B-n31-k5,Greedy NN (vss2sn Alg. 1),887.0,5,True,31.99404761904762,0.0
+B-n31-k5,Route-first cluster-second (msommacal),688.0,5,True,2.380952380952381,0.0
+B-n31-k5,CWS + 2-opt (MekhyW),677.0,5,True,0.7440476190476191,0.0
+B-n31-k5,CWS + Simulated annealing (vss2sn / adamiaonr),675.0,5,True,0.44642857142857145,10.0
+B-n31-k5,Tabu search (vss2sn / ivanchoff / AHalic),673.0,5,True,0.1488095238095238,10.0
+B-n31-k5,"Simple GA, no LS (manu-p-1)",678.0,5,True,0.8928571428571429,10.0
+B-n31-k5,v2.0 (ours),672.0,5,True,0.0,25.502
+P-n40-k5,CWS parallel (VeRyPy ps / CWVRP / adamiaonr),516.0,5,True,12.663755458515285,0.0
+P-n40-k5,CWS sequential (VeRyPy ss / CWVRP),512.0,5,True,11.790393013100436,0.0
+P-n40-k5,Sweep (ivanchoff / VeRyPy swp),671.0,5,True,46.506550218340614,0.0
+P-n40-k5,Greedy NN (vss2sn Alg. 1),682.0,5,True,48.90829694323144,0.0
+P-n40-k5,Route-first cluster-second (msommacal),546.0,6,False,19.213973799126638,0.0
+P-n40-k5,CWS + 2-opt (MekhyW),516.0,5,True,12.663755458515285,0.0
+P-n40-k5,CWS + Simulated annealing (vss2sn / adamiaonr),507.0,5,True,10.698689956331878,10.0
+P-n40-k5,Tabu search (vss2sn / ivanchoff / AHalic),458.0,5,True,0.0,10.0
+P-n40-k5,"Simple GA, no LS (manu-p-1)",500.0,5,True,9.170305676855895,10.0
+P-n40-k5,v2.0 (ours),458.0,5,True,0.0,25.502

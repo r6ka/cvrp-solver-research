@@ -1,0 +1,33 @@
+================================================================
+ AI-Based Green Route Optimizer v2.0 (hand-written HGS + exact route & set-partitioning steps)
+================================================================
+ Instance          : A-n32-k5
+ Input file        : benchmarks/A-n32-k5.vrp
+ Customers         : 31
+ Vehicle capacity  : 100
+ Max vehicles      : 5
+ Total demand      : 410
+ Objective         : distance
+ Random seed       : 1
+----------------------------------------------------------------
+ Vehicle 1: 0 -> 12 -> 1 -> 16 -> 30 -> 0
+     load 72/100 (72%)   distance 73
+ Vehicle 2: 0 -> 26 -> 7 -> 13 -> 17 -> 19 -> 31 -> 21 -> 0
+     load 98/100 (98%)   distance 155
+ Vehicle 3: 0 -> 27 -> 24 -> 0
+     load 44/100 (44%)   distance 59
+ Vehicle 4: 0 -> 14 -> 28 -> 11 -> 4 -> 23 -> 2 -> 3 -> 6 -> 0
+     load 98/100 (98%)   distance 230
+ Vehicle 5: 0 -> 20 -> 5 -> 25 -> 10 -> 15 -> 22 -> 9 -> 8 -> 18 -> 29 -> 0
+     load 98/100 (98%)   distance 267
+----------------------------------------------------------------
+ Total Distance      : 784
+ Vehicles used       : 5 / 5
+ Capacity violations : 0
+ Missing customers   : 0
+ Duplicate visits    : 0
+ Feasible            : YES
+ Runtime             : 25.5 s  (6677 GA children)
+ Exact route check   : 5/5 routes have a proven-optimal order (Held-Karp DP)
+ Published optimum   : 784   (gap +0.00%)  [read from file comment AFTER solving]
+================================================================

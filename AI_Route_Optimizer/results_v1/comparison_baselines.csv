@@ -1,0 +1,13 @@
+instance,method,distance,vehicles,feasible,gap_to_optimum_pct
+A-n32-k5,Sweep + fill trucks,1384.0,5,True,76.53061224489795
+A-n32-k5,Nearest neighbour,1145.0,5,True,46.045918367346935
+A-n32-k5,Local search only,847.0,5,True,8.035714285714286
+A-n32-k5,Hybrid GA (ours),784.0,5,True,0.0
+B-n31-k5,Sweep + fill trucks,940.0,5,True,39.88095238095238
+B-n31-k5,Nearest neighbour,887.0,5,True,31.99404761904762
+B-n31-k5,Local search only,714.0,5,True,6.25
+B-n31-k5,Hybrid GA (ours),672.0,5,True,0.0
+P-n40-k5,Sweep + fill trucks,676.0,5,True,47.59825327510917
+P-n40-k5,Nearest neighbour,682.0,5,True,48.90829694323144
+P-n40-k5,Local search only,485.0,5,True,5.895196506550218
+P-n40-k5,Hybrid GA (ours),458.0,5,True,0.0

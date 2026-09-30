@@ -1,0 +1,206 @@
+{
+  "name": "SCG-CPAC-Narathiwat-25",
+  "description": "Self-created CVRP case: daily delivery of cement and concrete products from one distribution centre to 25 customers in 12 districts of Narathiwat.",
+  "units": {
+    "distance": "km",
+    "demand": "tonnes"
+  },
+  "road_circuity_factor": 1.3,
+  "rounding": "none",
+  "depot": {
+    "name": "CPAC Distribution Centre (Mueang Narathiwat)",
+    "x": 0.0,
+    "y": 0.0,
+    "lat": 6.42611,
+    "lon": 101.82306
+  },
+  "vehicle": {
+    "type": "6-wheel truck",
+    "capacity": 12.0,
+    "count": 6
+  },
+  "green": {
+    "fuel_empty_l_per_km": 0.22,
+    "fuel_full_l_per_km": 0.33,
+    "co2_kg_per_litre": 2.68,
+    "fuel_price_per_litre": 32.0,
+    "_note": "Fuel figures are planning assumptions; 2.68 kg CO2/L is a standard diesel factor."
+  },
+  "customers": [
+    {
+      "name": "Mueang Narathiwat - Hardware store 1",
+      "district": "Mueang Narathiwat",
+      "x": -2.12,
+      "y": -0.02,
+      "demand": 1.5
+    },
+    {
+      "name": "Mueang Narathiwat - Housing project 2",
+      "district": "Mueang Narathiwat",
+      "x": -3.42,
+      "y": -1.37,
+      "demand": 3.2
+    },
+    {
+      "name": "Mueang Narathiwat - Housing project 3",
+      "district": "Mueang Narathiwat",
+      "x": -1.98,
+      "y": -1.75,
+      "demand": 3.2
+    },
+    {
+      "name": "Tak Bai - Hardware store 1",
+      "district": "Tak Bai",
+      "x": 25.64,
+      "y": -16.17,
+      "demand": 1.0
+    },
+    {
+      "name": "Tak Bai - Hardware store 2",
+      "district": "Tak Bai",
+      "x": 25.1,
+      "y": -16.72,
+      "demand": 3.6
+    },
+    {
+      "name": "Tak Bai - Housing project 3",
+      "district": "Tak Bai",
+      "x": 23.6,
+      "y": -17.13,
+      "demand": 1.8
+    },
+    {
+      "name": "Bacho - Precast yard 1",
+      "district": "Bacho",
+      "x": -16.92,
+      "y": 10.03,
+      "demand": 2.4
+    },
+    {
+      "name": "Bacho - Hardware store 2",
+      "district": "Bacho",
+      "x": -22.94,
+      "y": 9.7,
+      "demand": 2.0
+    },
+    {
+      "name": "Yi-ngo - Precast yard 1",
+      "district": "Yi-ngo",
+      "x": -14.17,
+      "y": -2.85,
+      "demand": 2.5
+    },
+    {
+      "name": "Yi-ngo - Precast yard 2",
+      "district": "Yi-ngo",
+      "x": -13.81,
+      "y": -3.67,
+      "demand": 0.8
+    },
+    {
+      "name": "Ra-ngae - Housing project 1",
+      "district": "Ra-ngae",
+      "x": -12.89,
+      "y": -11.74,
+      "demand": 2.4
+    },
+    {
+      "name": "Ra-ngae - Housing project 2",
+      "district": "Ra-ngae",
+      "x": -9.49,
+      "y": -15.14,
+      "demand": 1.0
+    },
+    {
+      "name": "Rueso - Housing project 1",
+      "district": "Rueso",
+      "x": -32.97,
+      "y": -5.62,
+      "demand": 2.4
+    },
+    {
+      "name": "Rueso - Housing project 2",
+      "district": "Rueso",
+      "x": -33.91,
+      "y": 0.27,
+      "demand": 3.2
+    },
+    {
+      "name": "Si Sakhon - Hardware store 1",
+      "district": "Si Sakhon",
+      "x": -39.49,
+      "y": -21.04,
+      "demand": 3.2
+    },
+    {
+      "name": "Waeng - Hardware store 1",
+      "district": "Waeng",
+      "x": 7.88,
+      "y": -53.86,
+      "demand": 3.0
+    },
+    {
+      "name": "Waeng - Housing project 2",
+      "district": "Waeng",
+      "x": 9.66,
+      "y": -52.87,
+      "demand": 2.5
+    },
+    {
+      "name": "Sukhirin - Hardware store 1",
+      "district": "Sukhirin",
+      "x": -4.74,
+      "y": -54.82,
+      "demand": 3.6
+    },
+    {
+      "name": "Su-ngai Kolok - Precast yard 1",
+      "district": "Su-ngai Kolok",
+      "x": 14.4,
+      "y": -46.62,
+      "demand": 3.0
+    },
+    {
+      "name": "Su-ngai Kolok - Housing project 2",
+      "district": "Su-ngai Kolok",
+      "x": 18.03,
+      "y": -43.88,
+      "demand": 2.4
+    },
+    {
+      "name": "Su-ngai Kolok - Precast yard 3",
+      "district": "Su-ngai Kolok",
+      "x": 15.19,
+      "y": -41.65,
+      "demand": 0.8
+    },
+    {
+      "name": "Su-ngai Padi - Housing project 1",
+      "district": "Su-ngai Padi",
+      "x": 5.72,
+      "y": -38.6,
+      "demand": 3.0
+    },
+    {
+      "name": "Su-ngai Padi - Construction site 2",
+      "district": "Su-ngai Padi",
+      "x": 3.92,
+      "y": -34.78,
+      "demand": 1.8
+    },
+    {
+      "name": "Chanae - Housing project 1",
+      "district": "Chanae",
+      "x": -17.36,
+      "y": -35.6,
+      "demand": 2.4
+    },
+    {
+      "name": "Chanae - Precast yard 2",
+      "district": "Chanae",
+      "x": -12.12,
+      "y": -37.71,
+      "demand": 2.0
+    }
+  ]
+}

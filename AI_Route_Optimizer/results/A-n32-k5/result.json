@@ -1,0 +1,198 @@
+{
+  "meta": {
+    "solver": "AI-Based Green Route Optimizer v2.0 (hand-written HGS + exact route & set-partitioning steps)",
+    "solver_version": "2.0.0",
+    "run_timestamp_utc": "2026-09-29T15:32:11+00:00",
+    "command": "python solver.py benchmarks/A-n32-k5.vrp --time 30 --seed 1 --trace --out results",
+    "python": "3.14.3",
+    "platform": "Linux-6.1.155-x86_64-with-glibc2.43",
+    "input_file": "benchmarks/A-n32-k5.vrp",
+    "input_sha256": "2ebedd0631c4c56c08ba3b1476ac874a7d54cc448bd3795de534f43b2c099ce2",
+    "objective": "distance",
+    "seed": 1,
+    "time_limit_s": 30.0,
+    "runtime_s": 25.5,
+    "ga_children": 6677,
+    "reference_value_from_file_comment": 784.0,
+    "convergence_history": [
+      [
+        0,
+        0.011,
+        827.0
+      ],
+      [
+        0,
+        0.021,
+        784.0
+      ]
+    ],
+    "engine_statistics": {
+      "engine": "HGS2 (v2.0)",
+      "fast_O1_local_search": true,
+      "iterations": 6677,
+      "final_penalty": 3.0832,
+      "local_search_moves_applied": {
+        "relocate": 91022,
+        "2-opt": 32214,
+        "2-opt*": 33614,
+        "or-opt": 6142,
+        "swap": 20116,
+        "SWAP*": 1011,
+        "new-route": 2221
+      },
+      "bandit": {
+        "crossover only": {
+          "times_used": 1845,
+          "mean_reward": 0.0117
+        },
+        "random ruin": {
+          "times_used": 1625,
+          "mean_reward": 0.0085
+        },
+        "proximity ruin": {
+          "times_used": 1787,
+          "mean_reward": 0.0109
+        },
+        "route ruin": {
+          "times_used": 1420,
+          "mean_reward": 0.0049
+        }
+      },
+      "held_karp_gain_total": 0.0,
+      "held_karp_route_sets_solved": 10,
+      "route_pool_size": 12,
+      "set_partitioning": {
+        "pool_routes": 12,
+        "nodes": 11,
+        "pruned": 1,
+        "proven_optimal_over_pool": true,
+        "root_lower_bound": 719.8857807834767,
+        "seconds": 0.0
+      },
+      "construction_results": null,
+      "exact_route_certificate": {
+        "routes": 5,
+        "proven_optimal_order": 5,
+        "checked_up_to_customers": 13
+      }
+    }
+  },
+  "result": {
+    "instance": "A-n32-k5",
+    "n_customers": 31,
+    "capacity": 100.0,
+    "max_vehicles": 5,
+    "vehicles_used": 5,
+    "total_distance": 784.0,
+    "total_fuel_l": 239.2705,
+    "total_co2_kg": 641.24494,
+    "capacity_violations": 0,
+    "missing_customers": [],
+    "duplicated_customers": [],
+    "invalid_customers": [],
+    "feasible": true,
+    "routes": [
+      {
+        "vehicle": 1,
+        "route": [
+          0,
+          12,
+          1,
+          16,
+          30,
+          0
+        ],
+        "load": 72.0,
+        "capacity": 100.0,
+        "utilisation_pct": 72.0,
+        "distance": 73.0,
+        "fuel_l": 22.1162,
+        "co2_kg": 59.271416,
+        "capacity_ok": true
+      },
+      {
+        "vehicle": 2,
+        "route": [
+          0,
+          26,
+          7,
+          13,
+          17,
+          19,
+          31,
+          21,
+          0
+        ],
+        "load": 98.0,
+        "capacity": 100.0,
+        "utilisation_pct": 98.0,
+        "distance": 155.0,
+        "fuel_l": 47.2689,
+        "co2_kg": 126.68065200000001,
+        "capacity_ok": true
+      },
+      {
+        "vehicle": 3,
+        "route": [
+          0,
+          27,
+          24,
+          0
+        ],
+        "load": 44.0,
+        "capacity": 100.0,
+        "utilisation_pct": 44.0,
+        "distance": 59.0,
+        "fuel_l": 16.486800000000002,
+        "co2_kg": 44.18462400000001,
+        "capacity_ok": true
+      },
+      {
+        "vehicle": 4,
+        "route": [
+          0,
+          14,
+          28,
+          11,
+          4,
+          23,
+          2,
+          3,
+          6,
+          0
+        ],
+        "load": 98.0,
+        "capacity": 100.0,
+        "utilisation_pct": 98.0,
+        "distance": 230.0,
+        "fuel_l": 73.5238,
+        "co2_kg": 197.043784,
+        "capacity_ok": true
+      },
+      {
+        "vehicle": 5,
+        "route": [
+          0,
+          20,
+          5,
+          25,
+          10,
+          15,
+          22,
+          9,
+          8,
+          18,
+          29,
+          0
+        ],
+        "load": 98.0,
+        "capacity": 100.0,
+        "utilisation_pct": 98.0,
+        "distance": 267.0,
+        "fuel_l": 79.8748,
+        "co2_kg": 214.064464,
+        "capacity_ok": true
+      }
+    ]
+  }
+}

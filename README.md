@@ -27,6 +27,18 @@ Star counts were taken from the GitHub API on 29 September 2026.
 
 `Kuifje02/vrpy` now redirects to `romain-montagne/vrpy`.
 
+## Our solver: AI_Route_Optimizer v2.0
+
+The [`AI_Route_Optimizer/`](AI_Route_Optimizer/) folder contains our own CVRP solver, written for AI Hackathon: Route Optimization 2026. Every algorithm is hand-written in standard-library Python: construction heuristics, O(1) local search with SWAP*, hybrid genetic search with a UCB1 bandit, Held-Karp exact route ordering, and set-partitioning branch & bound.
+
+| Test | Result |
+|---|---|
+| A-n32-k5 / B-n31-k5 / P-n40-k5 | 784 / 672 / 458 (all optimal, 10/10 seeds) |
+| 8 extra CVRPLIB instances | 8/8 optimal |
+| X-n101 / X-n157 / X-n200 (60 s) | +0.16% / +0.30% / +0.74% from best known |
+
+See [`AI_Route_Optimizer/README.md`](AI_Route_Optimizer/README.md) for usage, [`MANUAL_METHODS.md`](AI_Route_Optimizer/MANUAL_METHODS.md) for step-by-step method descriptions, and [`V2_PLAN.md`](AI_Route_Optimizer/V2_PLAN.md) for the plan and full results.
+
 ## Algorithm categories
 
 ### Constructive heuristics

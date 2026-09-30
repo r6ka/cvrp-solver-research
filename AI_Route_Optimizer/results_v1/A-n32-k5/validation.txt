@@ -1,0 +1,9 @@
+Instance A-n32-k5: 31 customers, capacity 100, vehicles 5
+  Route 1: load 98/100 OK             distance 230
+  Route 2: load 44/100 OK             distance 59
+  Route 3: load 72/100 OK             distance 73
+  Route 4: load 98/100 OK             distance 155
+  Route 5: load 98/100 OK             distance 267
+  Recomputed total distance: 784
+  Cost written in .sol file: 784
+  VALID SOLUTION: YES

@@ -1,0 +1,9 @@
+Instance P-n40-k5.vrp: 39 customers, capacity 140, vehicles 5
+  Route 1: load 114/140 OK             distance 94
+  Route 2: load 138/140 OK             distance 98
+  Route 3: load 116/140 OK             distance 92
+  Route 4: load 119/140 OK             distance 85
+  Route 5: load 131/140 OK             distance 89
+  Recomputed total distance: 458
+  Cost written in .sol file: 458
+  VALID SOLUTION: YES

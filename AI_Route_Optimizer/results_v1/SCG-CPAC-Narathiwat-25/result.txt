@@ -1,0 +1,38 @@
+================================================================
+ AI-Based Green Route Optimizer (Hybrid Genetic Algorithm + Local Search)
+================================================================
+ Instance          : SCG-CPAC-Narathiwat-25
+ Input file        : own_case/scg_cpac_narathiwat.json
+ Customers         : 25
+ Vehicle capacity  : 12
+ Max vehicles      : 6
+ Total demand      : 58.70
+ Objective         : distance
+ Random seed       : 1
+----------------------------------------------------------------
+ Vehicle 1: 0 -> 22 -> 18 -> 25 -> 24 -> 12 -> 0
+     Su-ngai Padi - Housing project 1 > Sukhirin - Hardware store 1 > Chanae - Precast yard 2 > Chanae - Housing project 1 > Ra-ngae - Housing project 2
+     load 12/12 (100%)   distance 159.11   CO2 118.8 kg
+ Vehicle 2: 0 -> 16 -> 17 -> 19 -> 20 -> 21 -> 0
+     Waeng - Hardware store 1 > Waeng - Housing project 2 > Su-ngai Kolok - Precast yard 1 > Su-ngai Kolok - Housing project 2 > Su-ngai Kolok - Precast yard 3
+     load 11.70/12 (98%)   distance 151.85   CO2 112.5 kg
+ Vehicle 3: 0 -> 4 -> 5 -> 6 -> 23 -> 3 -> 0
+     Tak Bai - Hardware store 1 > Tak Bai - Hardware store 2 > Tak Bai - Housing project 3 > Su-ngai Padi - Construction site 2 > Mueang Narathiwat - Housing project 3
+     load 11.40/12 (95%)   distance 123.85   CO2 92.3 kg
+ Vehicle 4: 0 -> 7 -> 8 -> 9 -> 2 -> 1 -> 0
+     Bacho - Precast yard 1 > Bacho - Hardware store 2 > Yi-ngo - Precast yard 1 > Mueang Narathiwat - Housing project 2 > Mueang Narathiwat - Hardware store 1
+     load 11.60/12 (97%)   distance 72.61   CO2 57.1 kg
+ Vehicle 5: 0 -> 10 -> 14 -> 13 -> 15 -> 11 -> 0
+     Yi-ngo - Precast yard 2 > Rueso - Housing project 2 > Rueso - Housing project 1 > Si Sakhon - Hardware store 1 > Ra-ngae - Housing project 1
+     load 12/12 (100%)   distance 134.02   CO2 98.5 kg
+----------------------------------------------------------------
+ Total Distance      : 641.44
+ Vehicles used       : 5 / 6
+ Capacity violations : 0
+ Missing customers   : 0
+ Duplicate visits    : 0
+ Feasible            : YES
+ Estimated fuel      : 178.8 L
+ Estimated CO2       : 479.3 kg
+ Runtime             : 30.0 s  (1234 GA children)
+================================================================

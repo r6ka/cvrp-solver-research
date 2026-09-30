@@ -1,0 +1,4 @@
+instance,customers,bks,v1_distance_60s,v1_gap_pct,v1_ga_children_60s,pyvrp_0.14_distance_60s,pyvrp_gap_pct,v2_distance_60s,v2_gap_pct
+X-n101-k25,100,27591,27965,1.36,384,27591,0.00,27636,0.16
+X-n157-k13,156,16876,17038,0.96,170,16876,0.00,16927,0.30
+X-n200-k36,199,58578,60380,3.08,121,58754,0.30,59011,0.74

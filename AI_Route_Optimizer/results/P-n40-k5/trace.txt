@@ -1,0 +1,132 @@
+
+========================================================================
+PHASE 1 - HAND-WRITTEN CONSTRUCTION HEURISTICS (seed the population)
+========================================================================
+
+========================================================================
+CLARKE-WRIGHT PARALLEL SAVINGS  (lambda=1.0, mu=0.0)
+========================================================================
+Step 1: 39 initial routes 0-i-0, total distance 1858
+Step 2-3: 671 positive savings, sorted. Top 10:
+   s(35,36) = 39 + 44 - 1.0*6 = 77.0
+   s(3,36) = 33 + 44 - 1.0*12 = 65.0
+   s(20,35) = 32 + 39 - 1.0*7 = 64.0
+   s(20,36) = 32 + 44 - 1.0*13 = 63.0
+   s(3,35) = 33 + 39 - 1.0*10 = 62.0
+   s(33,39) = 34 + 38 - 1.0*14 = 58.0
+   s(3,20) = 33 + 32 - 1.0*8 = 57.0
+   s(30,39) = 31 + 38 - 1.0*12 = 57.0
+   s(10,39) = 28 + 38 - 1.0*10 = 56.0
+   s(30,34) = 31 + 32 - 1.0*7 = 56.0
+Step 4: merges
+   merge #1: link 35-36 (saving 77.0) -> route load 23/140, 38 routes left
+   merge #2: link 3-36 (saving 65.0) -> route load 39/140, 37 routes left
+   merge #3: link 20-35 (saving 64.0) -> route load 67/140, 36 routes left
+   merge #4: link 33-39 (saving 58.0) -> route load 37/140, 35 routes left
+   merge #5: link 30-39 (saving 57.0) -> route load 56/140, 34 routes left
+   merge #6: link 30-34 (saving 56.0) -> route load 82/140, 33 routes left
+   merge #7: link 21-34 (saving 55.0) -> route load 90/140, 32 routes left
+   merge #8: link 3-28 (saving 54.0) -> route load 81/140, 31 routes left
+   merge #9: link 21-29 (saving 54.0) -> route load 96/140, 30 routes left
+   merge #10: link 28-31 (saving 54.0) -> route load 92/140, 29 routes left
+   merge #11: link 10-33 (saving 50.0) -> route load 101/140, 28 routes left
+   merge #12: link 26-31 (saving 48.0) -> route load 99/140, 27 routes left
+   merge #13: link 13-19 (saving 47.0) -> route load 32/140, 26 routes left
+   merge #14: link 7-26 (saving 43.0) -> route load 118/140, 25 routes left
+   merge #15: link 7-23 (saving 42.0) -> route load 134/140, 24 routes left
+   merge #16: link 16-29 (saving 42.0) -> route load 116/140, 23 routes left
+   merge #17: link 9-10 (saving 39.0) -> route load 127/140, 22 routes left
+   merge #18: link 13-25 (saving 39.0) -> route load 60/140, 21 routes left
+   merge #19: link 15-37 (saving 36.0) -> route load 19/140, 20 routes left
+   merge #20: link 14-25 (saving 35.0) -> route load 81/140, 19 routes left
+   merge #21: link 4-19 (saving 34.0) -> route load 90/140, 18 routes left
+   merge #22: link 14-24 (saving 32.0) -> route load 100/140, 17 routes left
+   merge #23: link 2-22 (saving 31.0) -> route load 38/140, 16 routes left
+   merge #24: link 8-22 (saving 31.0) -> route load 61/140, 15 routes left
+   merge #25: link 15-17 (saving 31.0) -> route load 22/140, 14 routes left
+   merge #26: link 4-17 (saving 26.0) -> route load 122/140, 13 routes left
+   merge #27: link 1-8 (saving 24.0) -> route load 68/140, 12 routes left
+   merge #28: link 5-38 (saving 23.0) -> route load 36/140, 11 routes left
+   merge #29: link 2-11 (saving 22.0) -> route load 87/140, 10 routes left
+   merge #30: link 6-24 (saving 22.0) -> route load 137/140, 9 routes left
+   merge #31: link 11-38 (saving 21.0) -> route load 123/140, 8 routes left
+   merge #32: link 1-32 (saving 18.0) -> route load 135/140, 7 routes left
+   merge #33: link 12-18 (saving 9.0) -> route load 70/140, 6 routes left
+   merge #34: link 18-27 (saving 3.0) -> route load 85/140, 5 routes left
+Result: 5 routes, distance 516
+
+========================================================================
+CLARKE-WRIGHT SEQUENTIAL SAVINGS
+========================================================================
+   route 1: [34, 21, 29, 20, 35, 36, 3, 28, 31, 26]  load 139/140
+   route 2: [17, 37, 15, 10, 33, 39, 30, 9, 16, 2]  load 139/140
+   route 3: [7, 23, 24, 14, 25, 13, 19, 4]  load 135/140
+   route 4: [6, 27, 8, 22, 1, 32, 11, 38, 5]  load 135/140
+   route 5: [12, 18]  load 70/140
+Result: 5 routes, distance 512
+
+========================================================================
+SWEEP (start angle 0 deg, counter-clockwise)
+========================================================================
+   route 1 closed at load 135: [16, 21, 11, 29, 2, 20, 35, 32]
+   route 2 closed at load 126: [36, 3, 22, 1, 28, 31, 8, 27, 26, 7]
+   route 3 closed at load 131: [23, 6, 24, 14, 25, 18]
+   route 4 closed at load 136: [13, 4, 19, 17, 37, 12, 15, 33, 5]
+   route 5 closed at load 90: [10, 39, 30, 38, 9, 34]
+Result: 5 routes, distance 671
+
+========================================================================
+NEAREST NEIGHBOUR
+========================================================================
+   route 1: [12, 5, 38, 9, 16, 2, 29, 21, 10]  load 140
+   route 2: [27, 1, 32, 11, 22, 28, 31, 8, 26, 7, 17]  load 138
+   route 3: [6, 14, 25, 18, 4, 37, 15, 36]  load 139
+   route 4: [23, 24, 13, 19, 33, 39, 30, 34]  load 140
+   route 5: [20, 35, 3]  load 61
+Result: 5 routes, distance 682
+
+========================================================================
+SEQUENTIAL CHEAPEST INSERTION
+========================================================================
+   route 1: [32, 2, 20, 35, 36, 3, 22, 1, 27]  load 139
+   route 2: [12, 17, 5, 10, 39, 30, 9, 38, 11]  load 136
+   route 3: [6, 24, 14, 18, 4, 37, 15, 33]  load 138
+   route 4: [23, 8, 26, 31, 28, 16, 29, 21, 34, 19]  load 135
+   route 5: [7, 25, 13]  load 70
+Result: 5 routes, distance 609
+
+========================================================================
+PHASE 1b - each construction improved by local search
+========================================================================
+  iter      0  t=   0.0s  best=497.00  routes=5  via CW parallel + repair
+   CW parallel              raw     516.00 ( 5 routes) -> after LS     502.00  infeasible
+   CW lambda=0.6 mu=0.0     raw     517.00 ( 5 routes) -> after LS     503.00  infeasible
+  iter      0  t=   0.0s  best=468.00  routes=5  via CW lambda=0.6 mu=0.5
+   CW lambda=0.6 mu=0.5     raw     519.00 ( 5 routes) -> after LS     468.00  feasible
+   CW lambda=0.8 mu=0.0     raw     517.00 ( 5 routes) -> after LS     503.00  infeasible
+   CW lambda=0.8 mu=0.5     raw     484.00 ( 5 routes) -> after LS     468.00  feasible
+   CW lambda=1.2 mu=0.0     raw     503.00 ( 5 routes) -> after LS     475.00  feasible
+   CW lambda=1.2 mu=0.5     raw     483.00 ( 5 routes) -> after LS     475.00  feasible
+   CW lambda=1.4 mu=0.0     raw     503.00 ( 5 routes) -> after LS     474.00  feasible
+   CW lambda=1.4 mu=0.5     raw     483.00 ( 5 routes) -> after LS     475.00  feasible
+   CW sequential            raw     512.00 ( 5 routes) -> after LS     481.00  feasible
+   Sweep                    raw     671.00 ( 5 routes) -> after LS     468.00  feasible
+   Sweep 60 deg             raw     672.00 ( 5 routes) -> after LS     475.00  feasible
+  iter      0  t=   0.1s  best=459.00  routes=5  via Sweep 120 deg
+   Sweep 120 deg            raw     687.00 ( 5 routes) -> after LS     459.00  feasible
+   Sweep 180 deg            raw     676.00 ( 5 routes) -> after LS     461.00  infeasible
+  iter      0  t=   0.1s  best=458.00  routes=5  via Sweep 240 deg
+   Sweep 240 deg            raw     653.00 ( 5 routes) -> after LS     458.00  feasible
+   Sweep 300 deg            raw     658.00 ( 5 routes) -> after LS     482.00  feasible
+   Nearest neighbour        raw     682.00 ( 5 routes) -> after LS     472.00  infeasible
+   Cheapest insertion       raw     609.00 ( 5 routes) -> after LS     470.00  feasible
+
+========================================================================
+PHASE 2 - HYBRID GENETIC SEARCH (every new best solution)
+========================================================================
+  iter   4001  restart (no improvement for 4000 iterations)
+
+========================================================================
+PHASE 3 - EXACT SET PARTITIONING OVER THE ROUTE POOL
+========================================================================
+   pool size 25, B&B nodes 29, finished=True

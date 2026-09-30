@@ -1,0 +1,295 @@
+
+########## 1. OFFICIAL BENCHMARKS (v2.0) ##########
+
+>>> Solving benchmarks/A-n32-k5.vrp  (objective=distance, seed=1, time limit=30s)
+  iter      0  t=   0.0s  best=827.00  routes=5  via CW parallel
+  iter      0  t=   0.0s  best=784.00  routes=5  via CW lambda=0.6 mu=0.0
+================================================================
+ AI-Based Green Route Optimizer v2.0 (hand-written HGS + exact route & set-partitioning steps)
+================================================================
+ Instance          : A-n32-k5
+ Input file        : benchmarks/A-n32-k5.vrp
+ Customers         : 31
+ Vehicle capacity  : 100
+ Max vehicles      : 5
+ Total demand      : 410
+ Objective         : distance
+ Random seed       : 1
+----------------------------------------------------------------
+ Vehicle 1: 0 -> 12 -> 1 -> 16 -> 30 -> 0
+     load 72/100 (72%)   distance 73
+ Vehicle 2: 0 -> 26 -> 7 -> 13 -> 17 -> 19 -> 31 -> 21 -> 0
+     load 98/100 (98%)   distance 155
+ Vehicle 3: 0 -> 27 -> 24 -> 0
+     load 44/100 (44%)   distance 59
+ Vehicle 4: 0 -> 14 -> 28 -> 11 -> 4 -> 23 -> 2 -> 3 -> 6 -> 0
+     load 98/100 (98%)   distance 230
+ Vehicle 5: 0 -> 20 -> 5 -> 25 -> 10 -> 15 -> 22 -> 9 -> 8 -> 18 -> 29 -> 0
+     load 98/100 (98%)   distance 267
+----------------------------------------------------------------
+ Total Distance      : 784
+ Vehicles used       : 5 / 5
+ Capacity violations : 0
+ Missing customers   : 0
+ Duplicate visits    : 0
+ Feasible            : YES
+ Runtime             : 25.5 s  (6677 GA children)
+ Exact route check   : 5/5 routes have a proven-optimal order (Held-Karp DP)
+ Published optimum   : 784   (gap +0.00%)  [read from file comment AFTER solving]
+================================================================
+
+>>> Solving benchmarks/B-n31-k5.vrp  (objective=distance, seed=1, time limit=30s)
+  iter      0  t=   0.0s  best=675.00  routes=5  via CW parallel
+  iter      0  t=   0.0s  best=672.00  routes=5  via CW lambda=1.2 mu=0.0
+================================================================
+ AI-Based Green Route Optimizer v2.0 (hand-written HGS + exact route & set-partitioning steps)
+================================================================
+ Instance          : B-n31-k5
+ Input file        : benchmarks/B-n31-k5.vrp
+ Customers         : 30
+ Vehicle capacity  : 100
+ Max vehicles      : 5
+ Total demand      : 412
+ Objective         : distance
+ Random seed       : 1
+----------------------------------------------------------------
+ Vehicle 1: 0 -> 2 -> 10 -> 27 -> 20 -> 0
+     load 38/100 (38%)   distance 189
+ Vehicle 2: 0 -> 26 -> 28 -> 12 -> 8 -> 23 -> 30 -> 0
+     load 97/100 (97%)   distance 107
+ Vehicle 3: 0 -> 7 -> 17 -> 13 -> 9 -> 6 -> 22 -> 0
+     load 96/100 (96%)   distance 110
+ Vehicle 4: 0 -> 14 -> 15 -> 11 -> 24 -> 19 -> 1 -> 3 -> 0
+     load 95/100 (95%)   distance 154
+ Vehicle 5: 0 -> 21 -> 16 -> 18 -> 25 -> 5 -> 4 -> 29 -> 0
+     load 86/100 (86%)   distance 112
+----------------------------------------------------------------
+ Total Distance      : 672
+ Vehicles used       : 5 / 5
+ Capacity violations : 0
+ Missing customers   : 0
+ Duplicate visits    : 0
+ Feasible            : YES
+ Runtime             : 25.5 s  (6318 GA children)
+ Exact route check   : 5/5 routes have a proven-optimal order (Held-Karp DP)
+ Published optimum   : 672   (gap +0.00%)  [read from file comment AFTER solving]
+================================================================
+
+>>> Solving benchmarks/P-n40-k5.vrp  (objective=distance, seed=1, time limit=30s)
+  iter      0  t=   0.0s  best=497.00  routes=5  via CW parallel + repair
+  iter      0  t=   0.0s  best=468.00  routes=5  via CW lambda=0.6 mu=0.5
+  iter      0  t=   0.1s  best=459.00  routes=5  via Sweep 120 deg
+  iter      0  t=   0.1s  best=458.00  routes=5  via Sweep 240 deg
+================================================================
+ AI-Based Green Route Optimizer v2.0 (hand-written HGS + exact route & set-partitioning steps)
+================================================================
+ Instance          : P-n40-k5
+ Input file        : benchmarks/P-n40-k5.vrp
+ Customers         : 39
+ Vehicle capacity  : 140
+ Max vehicles      : 5
+ Total demand      : 618
+ Objective         : distance
+ Random seed       : 1
+----------------------------------------------------------------
+ Vehicle 1: 0 -> 18 -> 4 -> 19 -> 13 -> 25 -> 14 -> 0
+     load 131/140 (94%)   distance 89
+ Vehicle 2: 0 -> 6 -> 24 -> 23 -> 7 -> 26 -> 31 -> 8 -> 27 -> 0
+     load 116/140 (83%)   distance 92
+ Vehicle 3: 0 -> 1 -> 22 -> 28 -> 3 -> 36 -> 35 -> 20 -> 2 -> 32 -> 0
+     load 138/140 (99%)   distance 98
+ Vehicle 4: 0 -> 11 -> 16 -> 29 -> 21 -> 34 -> 30 -> 9 -> 38 -> 0
+     load 119/140 (85%)   distance 85
+ Vehicle 5: 0 -> 5 -> 10 -> 39 -> 33 -> 15 -> 37 -> 17 -> 12 -> 0
+     load 114/140 (81%)   distance 94
+----------------------------------------------------------------
+ Total Distance      : 458
+ Vehicles used       : 5 / 5
+ Capacity violations : 0
+ Missing customers   : 0
+ Duplicate visits    : 0
+ Feasible            : YES
+ Runtime             : 25.5 s  (4885 GA children)
+ Exact route check   : 5/5 routes have a proven-optimal order (Held-Karp DP)
+ Published optimum   : 458   (gap +0.00%)  [read from file comment AFTER solving]
+================================================================
+
+########## 2. INDEPENDENT VALIDATION (validate.py, no solver code) ##########
+Instance A-n32-k5: 31 customers, capacity 100, vehicles 5
+  Route 1: load 72/100 OK             distance 73
+  Route 2: load 98/100 OK             distance 155
+  Route 3: load 44/100 OK             distance 59
+  Route 4: load 98/100 OK             distance 230
+  Route 5: load 98/100 OK             distance 267
+  Recomputed total distance: 784
+  Cost written in .sol file: 784
+  VALID SOLUTION: YES
+Instance B-n31-k5: 30 customers, capacity 100, vehicles 5
+  Route 1: load 38/100 OK             distance 189
+  Route 2: load 97/100 OK             distance 107
+  Route 3: load 96/100 OK             distance 110
+  Route 4: load 95/100 OK             distance 154
+  Route 5: load 86/100 OK             distance 112
+  Recomputed total distance: 672
+  Cost written in .sol file: 672
+  VALID SOLUTION: YES
+Instance P-n40-k5.vrp: 39 customers, capacity 140, vehicles 5
+  Route 1: load 131/140 OK             distance 89
+  Route 2: load 116/140 OK             distance 92
+  Route 3: load 138/140 OK             distance 98
+  Route 4: load 119/140 OK             distance 85
+  Route 5: load 114/140 OK             distance 94
+  Recomputed total distance: 458
+  Cost written in .sol file: 458
+  VALID SOLUTION: YES
+
+########## 3. REFERENCE-REPO METHODS (our re-implementations, 10s for timed ones) ##########
+instance  method                                               dist veh  feas   gap %
+A-n32-k5  CWS parallel (VeRyPy ps / CWVRP / adamiaonr)          842   5  True    7.40
+A-n32-k5  CWS sequential (VeRyPy ss / CWVRP)                    904   5  True   15.31
+A-n32-k5  Sweep (ivanchoff / VeRyPy swp)                       1561   5  True   99.11
+A-n32-k5  Greedy NN (vss2sn Alg. 1)                            1145   5  True   46.05
+A-n32-k5  Route-first cluster-second (msommacal)                887   5  True   13.14
+A-n32-k5  CWS + 2-opt (MekhyW)                                  829   5  True    5.74
+A-n32-k5  CWS + Simulated annealing (vss2sn / adamiaonr)        827   5  True    5.48
+A-n32-k5  Tabu search (vss2sn / ivanchoff / AHalic)             785   5  True    0.13
+A-n32-k5  Simple GA, no LS (manu-p-1)                           870   5  True   10.97
+A-n32-k5  v2.0 (ours)                                           784   5  True    0.00
+B-n31-k5  CWS parallel (VeRyPy ps / CWVRP / adamiaonr)          677   5  True    0.74
+B-n31-k5  CWS sequential (VeRyPy ss / CWVRP)                    707   5  True    5.21
+B-n31-k5  Sweep (ivanchoff / VeRyPy swp)                        940   5  True   39.88
+B-n31-k5  Greedy NN (vss2sn Alg. 1)                             887   5  True   31.99
+B-n31-k5  Route-first cluster-second (msommacal)                688   5  True    2.38
+B-n31-k5  CWS + 2-opt (MekhyW)                                  677   5  True    0.74
+B-n31-k5  CWS + Simulated annealing (vss2sn / adamiaonr)        675   5  True    0.45
+B-n31-k5  Tabu search (vss2sn / ivanchoff / AHalic)             673   5  True    0.15
+B-n31-k5  Simple GA, no LS (manu-p-1)                           678   5  True    0.89
+B-n31-k5  v2.0 (ours)                                           672   5  True    0.00
+P-n40-k5  CWS parallel (VeRyPy ps / CWVRP / adamiaonr)          516   5  True   12.66
+P-n40-k5  CWS sequential (VeRyPy ss / CWVRP)                    512   5  True   11.79
+P-n40-k5  Sweep (ivanchoff / VeRyPy swp)                        671   5  True   46.51
+P-n40-k5  Greedy NN (vss2sn Alg. 1)                             682   5  True   48.91
+P-n40-k5  Route-first cluster-second (msommacal)                546   6 False   19.21
+P-n40-k5  CWS + 2-opt (MekhyW)                                  516   5  True   12.66
+P-n40-k5  CWS + Simulated annealing (vss2sn / adamiaonr)        507   5  True   10.70
+P-n40-k5  Tabu search (vss2sn / ivanchoff / AHalic)             458   5  True    0.00
+P-n40-k5  Simple GA, no LS (manu-p-1)                           500   5  True    9.17
+P-n40-k5  v2.0 (ours)                                           458   5  True    0.00
+
+########## 4. ROBUSTNESS: 10 SEEDS x 10s ##########
+A-n32-k5: best 784  mean 784.0  worst 784  optimum 10/10  mean time-to-best 0.04s
+B-n31-k5: best 672  mean 672.0  worst 672  optimum 10/10  mean time-to-best 0.01s
+P-n40-k5: best 458  mean 458.0  worst 458  optimum 10/10  mean time-to-best 0.07s
+
+########## 5. GENERALISATION: 8 EXTRA CVRPLIB INSTANCES (20s) ##########
+A-n33-k5   n= 32 K=5  ours    661  optimum    661  gap  0.00%  feasible True
+A-n45-k6   n= 44 K=6  ours    944  optimum    944  gap  0.00%  feasible True
+A-n60-k9   n= 59 K=9  ours   1354  optimum   1354  gap  0.00%  feasible True
+B-n45-k5   n= 44 K=5  ours    751  optimum    751  gap  0.00%  feasible True
+B-n57-k9   n= 56 K=9  ours   1598  optimum   1598  gap  0.00%  feasible True
+P-n50-k7   n= 49 K=7  ours    554  optimum    554  gap  0.00%  feasible True
+P-n76-k5   n= 75 K=5  ours    627  optimum    627  gap  0.00%  feasible True
+E-n51-k5   n= 50 K=5  ours    521  optimum    521  gap  0.00%  feasible True
+
+########## 6. SCALING + ABLATION ON X INSTANCES (45s each) ##########
+X-n101-k25  BKS   27591 | v1.0:   28014 (+1.53%) | v2.0 full:   27657 (+0.24%) | v2.0 no bandit:   27659 (+0.25%) | v2.0 no exact steps:   27657 (+0.24%) |
+X-n157-k13  BKS   16876 | v1.0:   17238 (+2.15%) | v2.0 full:   16940 (+0.38%) | v2.0 no bandit:   16915 (+0.23%) | v2.0 no exact steps:   16938 (+0.37%) |
+X-n200-k36  BKS   58578 | v1.0:   60380 (+3.08%) | v2.0 full:   59011 (+0.74%) | v2.0 no bandit:   59282 (+1.20%) | v2.0 no exact steps:   59036 (+0.78%) |
+
+########## 7. SELF-CREATED CASE: SCG-CPAC NARATHIWAT ##########
+
+>>> Solving own_case/scg_cpac_narathiwat.json  (objective=distance, seed=1, time limit=30s)
+  iter      0  t=   0.0s  best=644.23  routes=6  via CW parallel + repair
+  iter      0  t=   0.0s  best=641.44  routes=5  via CW lambda=0.6 mu=0.0 + repair
+================================================================
+ AI-Based Green Route Optimizer v2.0 (hand-written HGS + exact route & set-partitioning steps)
+================================================================
+ Instance          : SCG-CPAC-Narathiwat-25
+ Input file        : own_case/scg_cpac_narathiwat.json
+ Customers         : 25
+ Vehicle capacity  : 12
+ Max vehicles      : 6
+ Total demand      : 58.70
+ Objective         : distance
+ Random seed       : 1
+----------------------------------------------------------------
+ Vehicle 1: 0 -> 12 -> 24 -> 25 -> 18 -> 22 -> 0
+     Ra-ngae - Housing project 2 > Chanae - Housing project 1 > Chanae - Precast yard 2 > Sukhirin - Hardware store 1 > Su-ngai Padi - Housing project 1
+     load 12/12 (100%)   distance 159.11   CO2 115.7 kg
+ Vehicle 2: 0 -> 1 -> 2 -> 9 -> 8 -> 7 -> 0
+     Mueang Narathiwat - Hardware store 1 > Mueang Narathiwat - Housing project 2 > Yi-ngo - Precast yard 1 > Bacho - Hardware store 2 > Bacho - Precast yard 1
+     load 11.60/12 (97%)   distance 72.61   CO2 49.2 kg
+ Vehicle 3: 0 -> 11 -> 15 -> 13 -> 14 -> 10 -> 0
+     Ra-ngae - Housing project 1 > Si Sakhon - Hardware store 1 > Rueso - Housing project 1 > Rueso - Housing project 2 > Yi-ngo - Precast yard 2
+     load 12/12 (100%)   distance 134.02   CO2 99.0 kg
+ Vehicle 4: 0 -> 21 -> 20 -> 19 -> 17 -> 16 -> 0
+     Su-ngai Kolok - Precast yard 3 > Su-ngai Kolok - Housing project 2 > Su-ngai Kolok - Precast yard 1 > Waeng - Housing project 2 > Waeng - Hardware store 1
+     load 11.70/12 (98%)   distance 151.85   CO2 110.2 kg
+ Vehicle 5: 0 -> 4 -> 5 -> 6 -> 23 -> 3 -> 0
+     Tak Bai - Hardware store 1 > Tak Bai - Hardware store 2 > Tak Bai - Housing project 3 > Su-ngai Padi - Construction site 2 > Mueang Narathiwat - Housing project 3
+     load 11.40/12 (95%)   distance 123.85   CO2 92.3 kg
+----------------------------------------------------------------
+ Total Distance      : 641.44
+ Vehicles used       : 5 / 6
+ Capacity violations : 0
+ Missing customers   : 0
+ Duplicate visits    : 0
+ Feasible            : YES
+ Estimated fuel      : 174.0 L
+ Estimated CO2       : 466.4 kg
+ Runtime             : 25.5 s  (7602 GA children)
+ Exact route check   : 5/5 routes have a proven-optimal order (Held-Karp DP)
+================================================================
+
+>>> Solving own_case/scg_cpac_narathiwat.json  (objective=co2, seed=1, time limit=30s)
+  iter      0  t=   0.0s  best=456.70  routes=6  via CW parallel + repair
+  iter      0  t=   0.3s  best=456.68  routes=6  via CW sequential + repair
+================================================================
+ AI-Based Green Route Optimizer v2.0 (hand-written HGS + exact route & set-partitioning steps)
+================================================================
+ Instance          : SCG-CPAC-Narathiwat-25
+ Input file        : own_case/scg_cpac_narathiwat.json
+ Customers         : 25
+ Vehicle capacity  : 12
+ Max vehicles      : 6
+ Total demand      : 58.70
+ Objective         : co2
+ Random seed       : 1
+----------------------------------------------------------------
+ Vehicle 1: 0 -> 25 -> 18 -> 16 -> 17 -> 0
+     Chanae - Precast yard 2 > Sukhirin - Hardware store 1 > Waeng - Hardware store 1 > Waeng - Housing project 2
+     load 11.10/12 (92%)   distance 164.69   CO2 118.9 kg
+ Vehicle 2: 0 -> 23 -> 22 -> 19 -> 20 -> 21 -> 0
+     Su-ngai Padi - Construction site 2 > Su-ngai Padi - Housing project 1 > Su-ngai Kolok - Precast yard 1 > Su-ngai Kolok - Housing project 2 > Su-ngai Kolok - Precast yard 3
+     load 11/12 (92%)   distance 134.59   CO2 95.8 kg
+ Vehicle 3: 0 -> 14 -> 13 -> 15 -> 24 -> 0
+     Rueso - Housing project 2 > Rueso - Housing project 1 > Si Sakhon - Hardware store 1 > Chanae - Housing project 1
+     load 11.20/12 (93%)   distance 159.53   CO2 112.7 kg
+ Vehicle 4: 0 -> 6 -> 5 -> 4 -> 0
+     Tak Bai - Housing project 3 > Tak Bai - Hardware store 2 > Tak Bai - Hardware store 1
+     load 6.40/12 (53%)   distance 80.34   CO2 53.6 kg
+ Vehicle 5: 0 -> 12 -> 11 -> 10 -> 9 -> 8 -> 7 -> 0
+     Ra-ngae - Housing project 2 > Ra-ngae - Housing project 1 > Yi-ngo - Precast yard 2 > Yi-ngo - Precast yard 1 > Bacho - Hardware store 2 > Bacho - Precast yard 1
+     load 11.10/12 (92%)   distance 94.51   CO2 68.4 kg
+ Vehicle 6: 0 -> 3 -> 2 -> 1 -> 0
+     Mueang Narathiwat - Housing project 3 > Mueang Narathiwat - Housing project 2 > Mueang Narathiwat - Hardware store 1
+     load 7.90/12 (66%)   distance 10.56   CO2 7.2 kg
+----------------------------------------------------------------
+ Total Distance      : 644.23
+ Vehicles used       : 6 / 6
+ Capacity violations : 0
+ Missing customers   : 0
+ Duplicate visits    : 0
+ Feasible            : YES
+ Estimated fuel      : 170.4 L
+ Estimated CO2       : 456.7 kg
+ Runtime             : 25.5 s  (784 GA children)
+ Exact route check   : 6/6 routes have a proven-optimal order (Held-Karp DP)
+================================================================
+method                                          km  fuel L  CO2 kg trucks
+Sweep + fill trucks (manual-style plan)      877.0   238.1   638.1      6
+Nearest neighbour                            828.7   211.5   566.9      6
+v2.0 - min distance                          641.4   174.0   466.4      5
+v2.0 - min CO2                               644.2   170.4   456.7      6
+
+All done in 1156 s. Results in /home/user/workspace/AI_Route_Optimizer/results

@@ -1,0 +1,41 @@
+================================================================
+ AI-Based Green Route Optimizer (Hybrid Genetic Algorithm + Local Search)
+================================================================
+ Instance          : SCG-CPAC-Narathiwat-25
+ Input file        : own_case/scg_cpac_narathiwat.json
+ Customers         : 25
+ Vehicle capacity  : 12
+ Max vehicles      : 6
+ Total demand      : 58.70
+ Objective         : co2
+ Random seed       : 1
+----------------------------------------------------------------
+ Vehicle 1: 0 -> 3 -> 2 -> 1 -> 0
+     Mueang Narathiwat - Housing project 3 > Mueang Narathiwat - Housing project 2 > Mueang Narathiwat - Hardware store 1
+     load 7.90/12 (66%)   distance 10.56   CO2 7.2 kg
+ Vehicle 2: 0 -> 23 -> 22 -> 19 -> 20 -> 21 -> 0
+     Su-ngai Padi - Construction site 2 > Su-ngai Padi - Housing project 1 > Su-ngai Kolok - Precast yard 1 > Su-ngai Kolok - Housing project 2 > Su-ngai Kolok - Precast yard 3
+     load 11/12 (92%)   distance 134.59   CO2 95.8 kg
+ Vehicle 3: 0 -> 12 -> 11 -> 10 -> 9 -> 8 -> 7 -> 0
+     Ra-ngae - Housing project 2 > Ra-ngae - Housing project 1 > Yi-ngo - Precast yard 2 > Yi-ngo - Precast yard 1 > Bacho - Hardware store 2 > Bacho - Precast yard 1
+     load 11.10/12 (92%)   distance 94.51   CO2 68.4 kg
+ Vehicle 4: 0 -> 25 -> 18 -> 16 -> 17 -> 0
+     Chanae - Precast yard 2 > Sukhirin - Hardware store 1 > Waeng - Hardware store 1 > Waeng - Housing project 2
+     load 11.10/12 (92%)   distance 164.69   CO2 118.9 kg
+ Vehicle 5: 0 -> 14 -> 13 -> 15 -> 24 -> 0
+     Rueso - Housing project 2 > Rueso - Housing project 1 > Si Sakhon - Hardware store 1 > Chanae - Housing project 1
+     load 11.20/12 (93%)   distance 159.53   CO2 112.7 kg
+ Vehicle 6: 0 -> 6 -> 5 -> 4 -> 0
+     Tak Bai - Housing project 3 > Tak Bai - Hardware store 2 > Tak Bai - Hardware store 1
+     load 6.40/12 (53%)   distance 80.34   CO2 53.6 kg
+----------------------------------------------------------------
+ Total Distance      : 644.23
+ Vehicles used       : 6 / 6
+ Capacity violations : 0
+ Missing customers   : 0
+ Duplicate visits    : 0
+ Feasible            : YES
+ Estimated fuel      : 170.4 L
+ Estimated CO2       : 456.7 kg
+ Runtime             : 30.0 s  (844 GA children)
+================================================================
