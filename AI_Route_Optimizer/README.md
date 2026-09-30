@@ -1,4 +1,4 @@
-# Route Optimizer v2.0
+# Route Optimizer
 
 A pure-Python Capacitated Vehicle Routing Problem (CVRP) solver developed for AI Hackathon 2026: AI Engineering for Green Logistics.
 
