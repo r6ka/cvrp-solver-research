@@ -1,13 +1,31 @@
-# AI-Based Green Route Optimizer v2.0
+# Route Optimizer v2.0
 
-A generalized CVRP solver built for **AI Hackathon: Route Optimization 2026, "AI Engineering for Green Logistics"**.
+A pure-Python Capacitated Vehicle Routing Problem (CVRP) solver developed for AI Hackathon 2026: AI Engineering for Green Logistics.
 
-The same solver and settings are used for every CVRP instance. The program reads the benchmark file and builds the distance matrix itself, then works out the routes. It does not contain any stored answers or code written for a specific instance.
+GreenRoute reads standard benchmark instances, constructs its own distance matrix, and generates capacity-feasible delivery routes without relying on precomputed routes, instance-specific logic, or stored benchmark answers. The same solver configuration is applied consistently across every CVRP instance.
 
-**Changes in v2.0.** Every algorithm is written by hand in pure Python, using only the standard library. The solver imports no PyVRP, OR-Tools, Numba or neural-network library. Two exact steps were added:
+Version 2.0 Highlights
+Built entirely with Python’s standard library
 
-- **Held-Karp dynamic programming** proves that the stop order within each route is optimal.
-- **Set-partitioning branch & bound** recombines the best routes found during the search.
+No external optimization or machine-learning frameworks
+
+No PyVRP
+
+No Google OR-Tools
+
+No Numba
+
+No neural-network libraries
+
+Automatically parses benchmark input and calculates route distances
+
+Uses heuristic search to discover high-quality route combinations
+
+Includes exact optimization stages for stronger route validation:
+
+Held–Karp dynamic programming finds a provably optimal customer order for each selected route
+
+Set-partitioning branch and bound recombines promising routes into the best feasible overall solution
 
 `--trace` writes every solving step to a file. See `MANUAL_METHODS.md` for how each method works step by step, and `V2_PLAN.md` for the plan and the full results.
 
